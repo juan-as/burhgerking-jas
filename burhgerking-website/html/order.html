@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/web-assets/webicon-favicon.ico" />
+    <meta name="description" content="Welcome to BuRHger King! Order you’r burger here!">
+
+    <title>Order | BuRHger King</title>
+</head>
+
+<body>
+    <nav id="navbar-webpage">
+        <div class="navbar-logo-container">
+            <a href="index.html">
+                <img src="../assets/web-assets/webicon-header.png" class="headerlogo-img" alt="BuRHger King Logo" />
+            </a>
+        </div>
+        <div class="navbar-menu-container webpage">
+            <a href="index.html" class="navbarmenu-text">
+                HOME
+            </a>
+            <a href="menu.html" class="navbarmenu-text">
+                MENU
+            </a>
+            <a href="#order-list" class="navbarmenu-text">
+                ORDER
+            </a>
+            <a href="newmenu.html" class="navbarmenu-text">
+                NEW MENU?!?
+            </a>
+            <a href="aboutus.html" class="navbarmenu-text">
+                ABOUT US
+            </a>
+        </div>
+    </nav>
+
+    <a href="menu.html#foodmenu-list" target="_blank">
+        <div class="itemfloat-container">
+            <img src="../assets/web-icon/menu-icon.png" class="floaticon-img left" />
+            <span class="itemfloat-text">
+                SEE MENU
+            </span>
+            <br />
+            <span class="order-tooltip">See menu to add</span>
+
+            <img src="../assets/web-icon/arrow-right-orange.svg" class="floaticon-img right" />
+        </div>
+    </a>
+
+    <section class="jumbotron-webpage order">
+        <h1>
+            WHAT
+            <br />
+            YOU ORDERED?
+        </h1>
+    </section>
+
+    <div class="anchor" id="order-list"></div>
+    <form action="#">
+        <section class="content-container">
+            <div class="pagesectiontext-container">
+                <h2>
+                    Add You'r Order
+                </h2>
+            </div>
+
+            <div class="orderlist-container">
+                <div class="orderitem-card">
+                    <img src="../assets/menu-img/burger4.png" class="orderitem-img food" alt="BuRHger King Menu" />
+                    <div class="orderdetail-container left">
+                        <div class="promoorder-tag">PROMO</div>
+                        <span class="menutitle-text">Ordinary Burger</span>
+                        <span class="menudesc-text order">
+                            Chiken meat, veges and cheese.
+                        </span>
+                        <input type="text" id="" name="ordernotes" placeholder="add notes" value="no bread" />
+                    </div>
+                    <div class="orderdetail-container right">
+                        <button id="orderminus-btn" class="orderqty-btn">
+                            -
+                        </button>
+                        <span class="orderqty-text">
+                            2
+                        </span>
+                        <button id="orderplus-btn" class="orderqty-btn">
+                            +
+                        </button>
+
+                        <br />
+
+                        <span class="menuprice-text promo">
+                            Rp 40.398
+                        </span>
+
+                        <br />
+                        <span class="menuprice-text normalprice order">
+                            51.198
+                        </span>
+                    </div>
+                </div>
+
+                <div class="orderitem-card">
+                    <img src="../assets/menu-img/drink3.png" class="orderitem-img drink" alt="BuRHger King Menu" />
+                    <div class="orderdetail-container left">
+                        <span class="menutitle-text">Spirit</span>
+                        <span class="menudesc-text order">
+                            You have to have spirit.
+                        </span>
+                        <input type="text" id="" name="ordernotes" placeholder="add notes" />
+                    </div>
+                    <div class="orderdetail-container right">
+                        <button id="orderminus-btn" class="orderqty-btn">
+                            -
+                        </button>
+                        <span class="orderqty-text">
+                            1
+                        </span>
+                        <button id="orderplus-btn" class="orderqty-btn">
+                            +
+                        </button>
+                        <br />
+                        <span class="menuprice-text order">
+                            Rp 9.999
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of oderlist -->
+        </section>
+        <!-- end of oderlist container -->
+
+        <section class="content-container orderdetail-form" id="order-info">
+            <div class="pagesectiontext-container">
+                <h2>
+                    Fill You’r Details
+                </h2>
+            </div>
+
+            <br />
+
+            <label for="fullname">Full Name</label><br />
+            <input type="text" required id="orderdetail-fullname-form" name="fullname-form" name="fname"
+                placeholder="Joh Doe" /><br />
+
+            <label for="email">Email</label><br />
+            <input type="email" required id="orderdetail-email-form" name="email-form"
+                placeholder="mail@email.com" /><br />
+
+            <label for="address">Address</label><br />
+            <textarea required id="orderdetail-address-form" name="address-form" class="address-form"
+                placeholder="Coconut St. No.8"></textarea><br />
+            <br />
+            <input type="checkbox" required id="orderdetail-agree-form" name="agree-form" value="aggreed" />
+            <label for="aggreement">I agree with the term and conditions.</label><br />
+        </section>
+
+        <section class="content-container" id="order-info">
+            <div class="pagesectiontext-container">
+                <h2>
+                    You’r Order Summary
+                </h2>
+            </div>
+
+            <div class="checkoutlist-container">
+                <div class="checkoutlist-left">
+                    <div class="orderitem-card checkout">
+                        <img src="../assets/menu-img/burger4.png" class="orderitem-img food" alt="BuRHger King Menu" />
+                        <div class="orderdetail-container left">
+                            <div class="promoorder-tag">PROMO</div>
+                            <span class="menutitle-text">Ordinary Burger</span>
+                            <span class="menudesc-text order">
+                                Chiken meat, veges and cheese.
+                            </span>
+                            <input type="text" id="" name="ordernotes" disabled value="no bread" />
+                        </div>
+                        <div class="orderdetail-container right">
+                            <span class="orderqty-text">
+                                2x
+                            </span>
+
+                            <br />
+                            <span class="menuprice-text promo">
+                                Rp 40.398
+                            </span>
+
+                            <br />
+                            <span class="menuprice-text normalprice order">
+                                51.198
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="orderitem-card checkout">
+                        <img src="../assets/menu-img/drink3.png" class="orderitem-img drink" alt="BuRHger King Menu" />
+                        <div class="orderdetail-container left">
+                            <span class="menutitle-text">Spirit</span>
+                            <span class="menudesc-text order">
+                                You have to have spirit.
+                            </span>
+                        </div>
+                        <div class="orderdetail-container right">
+                            <span class="orderqty-text">
+                                1x
+                            </span>
+
+                            <br />
+                            <span class="menuprice-text">
+                                Rp 9.999
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkoutlist-right">
+                    <span class="checkouttitle-text">Payment</span>
+                    <button type="button" class="checkoutmethod-btn">Change Method</button>
+                    <!-- <br /> -->
+                    <span class="checkoutdesc-text">Pay with</span>
+                    <span class="checkoutdesc-text bold">Cash on Delivery</span>
+                    <!-- <br /> -->
+                    <span class="checkoutdesc-text">Order Total</span>
+                    <span class="checkoutdesc-text bold">50.397</span>
+                    <!-- <br /> -->
+                    <span class="checkoutdesc-text">Delivery</span>
+                    <span class="checkoutdesc-text bold">12.000</span>
+                    <!-- <br /> -->
+                    <span class="checkoutdesc-text">Total</span>
+                    <span class="checkoutdesc-text bold totalpay">Rp 62.397</span>
+                    <input type="submit" value="CONFIRM ORDER & PAY" class="paycheckout-btn" />
+                </div>
+                <!-- end of checkout oderlist -->
+            </div>
+            </div>
+    </form>
+
+    <footer>
+        <div class="footermenu-container left">
+            <a href="index.html" class="footermenu-text">
+                HOME
+            </a>
+            <a href="menu.html" class="footermenu-text">
+                MENU
+            </a>
+            <a href="#order-list" class="footermenu-text">
+                ORDER
+            </a>
+            <a href="newmenu.html" class="footermenu-text">
+                NEW MENU?!?
+            </a>
+            <a href="aboutus.html" class="footermenu-text">
+                ABOUT US
+            </a>
+        </div>
+
+        <div class="footermenu-container right">
+            <img src="../assets/web-assets/webicon-footer.png" class="footerlogo-img" alt="BuRHger King Logo" />
+        </div>
+    </footer>
+
+    <div class="footerwatermark-text">Juan Augusto - 2021</div>
+</body>
+
+</html>
